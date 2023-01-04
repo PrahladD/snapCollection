@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TestCell" customModule="Snapper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="208"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="219" height="208"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dbv-4e-fqz">
+                        <rect key="frame" x="0.0" y="0.0" width="219" height="208"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="e1N-in-YYt">
+                                <rect key="frame" x="7.6666666666666714" y="8.3333333333333286" width="203.66666666666663" height="191.33333333333337"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e1N-in-YYt" firstAttribute="centerY" secondItem="Dbv-4e-fqz" secondAttribute="centerY" id="H24-Kf-FuE"/>
+                            <constraint firstItem="e1N-in-YYt" firstAttribute="height" secondItem="Dbv-4e-fqz" secondAttribute="height" multiplier="0.92" id="OYd-ni-Ng5"/>
+                            <constraint firstItem="e1N-in-YYt" firstAttribute="width" secondItem="Dbv-4e-fqz" secondAttribute="width" multiplier="0.92" constant="2" id="gcz-ue-A2v"/>
+                            <constraint firstItem="e1N-in-YYt" firstAttribute="centerX" secondItem="Dbv-4e-fqz" secondAttribute="centerX" id="r1w-ml-fVC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Dbv-4e-fqz" secondAttribute="bottom" id="8qu-wL-6GO"/>
+                <constraint firstItem="Dbv-4e-fqz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fzY-fA-Yur"/>
+                <constraint firstAttribute="trailing" secondItem="Dbv-4e-fqz" secondAttribute="trailing" id="hAt-Qy-9cW"/>
+                <constraint firstItem="Dbv-4e-fqz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jxQ-r9-I61"/>
+            </constraints>
+            <size key="customSize" width="219" height="208"/>
+            <connections>
+                <outlet property="img" destination="e1N-in-YYt" id="1jH-O2-g7Z"/>
+                <outlet property="testCellTopConstraint" destination="jxQ-r9-I61" id="d7f-sb-b07"/>
+                <outlet property="wrapperView" destination="Dbv-4e-fqz" id="srq-Nz-LMs"/>
+            </connections>
+            <point key="canvasLocation" x="120.76923076923076" y="76.066350710900466"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="110" height="46"/>
+    </resources>
+</document>
